@@ -4,7 +4,7 @@ Stabinol is novel Ethereum cashback token, developed by the Stabilize Team, that
 ## Deployed Contracts
 Stabinol Token: https://etherscan.io/address/0x4ff5253E2304e3f5Ed6547Ac5D9952A62B91E3E8
 
-Stabinol Claimer: https://etherscan.io/address/0x71Ce0fb59f17894A70f1D1b4F6eb03cA93E96858
+Stabinol ClaimerV2: https://etherscan.io/address/0x9c90129C6B4e6D03b768D9bdCcE87271084C1488
 
 Stabinol Staker: https://etherscan.io/address/0x4d44545cB6AE1f0Efb972be59379c5ae406E676C
 
