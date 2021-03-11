@@ -12,7 +12,7 @@ Stabinol Price Oracle: https://etherscan.io/address/0xEb0Bc43490E1EC029174F5809A
 
 Stabinol Merkle/Airdrop Distributor: https://etherscan.io/address/0xd55bf7FDa184233063C8E3e835bfe39E1A179919
 
-Stabinol ETH Spent Oracle (Not Active): https://etherscan.io/address/0xb73852dC78192Cf70b6588dffAaF8783321E9625
+Stabinol ETH Spent Oracle (Not Active): https://etherscan.io/address/0xaD67C3bF4673F1238e330256a4E1225B9418E6C0
 
 Stabinol Buyback Treasury (Not Active): https://etherscan.io/address/0x718b6F2fB4BB6A4314801b4DFDd1dDEEd1989050
 
