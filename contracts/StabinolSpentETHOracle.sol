@@ -17,6 +17,8 @@ contract StabinolSpentETHOracle {
     event GovernanceUpdated(address _add);
     event ProviderAdded(address _add);
     event ProviderRemoved(address _add);
+    event NewIteration(uint256 _iter);
+    event UserETHSpentUpdated(address _updater, address _user, uint256 _amount);
     
     // Structs
     struct UserInfo {
@@ -64,6 +66,7 @@ contract StabinolSpentETHOracle {
             allUsersInfo[_add].ethSpent = 0;
         }
         allUsersInfo[_add].ethSpent = allUsersInfo[_add].ethSpent + _ethback; // Overflow is ok
+        emit UserETHSpentUpdated(msg.sender, _add, _ethback); // Create an event
         return true; // This function will never revert so safe to be integrated
     }
     
@@ -88,6 +91,12 @@ contract StabinolSpentETHOracle {
     function governanceRemoveFromProviders(address _add) external onlyGovernance {
         providers[_add] = false;
         emit ProviderRemoved(_add);
+    }
+    
+    function governanceNewIteration() external onlyGovernance {
+        // This will reset all ETH spends back to zero
+        _globalIteration = _globalIteration + 1;
+        emit NewIteration(_globalIteration);
     }
     
 }
